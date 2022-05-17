@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body-index {
+  background-image: url(../assets/wallpaperpages.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.body {
+  background-image: url(../assets/wallpaperpages.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body .body-index {
+  background-image: url(../assets/wallpaperpages.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+@media only screen and (max-width: 1089px) and (min-width: 200px) {
+  .body {
+    background-image: url(../assets/wallpaperpages.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 1089px) and (min-width: 200px) {
+  .body-index {
+    background-image: url(../assets/wallpaperpages.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+/* ----------------------------------Nav Bar */
+#navbarNav :hover {
+  color: rgb(8, 185, 185);
+}
+
+h1 {
+  display: none;
+}
+
+.main-index {
+  padding: 40px 250px;
+  display: flexbox;
+  position: relative;
+}
+.main-index carousel-container-index {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1090px) and (min-width: 200px) {
+  .main-index {
+    padding-top: 10px;
+    display: inline;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .carousel-container-index {
+    display: inline;
+    justify-content: space-evenly;
+    width: 100%;
+    background-attachment: scroll;
+  }
+}
+/* Seccion Nosotros */
+.accordion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 5px 5px rgba(255, 153, 153, 0.226);
+  background-image: linear-gradient(rgba(245, 224, 234, 0.253), rgba(250, 250, 250, 0.336));
+  margin: 40px;
+  font-size: 20px;
+  color: rgba(57, 32, 58, 0.6117647059);
+  font-family: "Vollkorn", serif;
+}
+.accordion .accordion-button {
+  background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+}
+.accordion .accordion-button collapsed {
+  background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+}
+.accordion .accordion-body {
+  background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+}
+.accordion .accordion-item {
+  background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+}
+
+@media only screen and (max-width: 960px) and (min-width: 660px) {
+  .accordion {
+    flex-basis: content;
+    flex-direction: column;
+  }
+
+  .accordion-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    margin: 1px;
+    width: 100%;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+    margin: 1px;
+  }
+
+  .accordion-body {
+    justify-content: space-evenly;
+    font-size: 13px;
+    margin: 1px;
+  }
+}
+@media only screen and (max-width: 659px) and (min-width: 200px) {
+  .accordion {
+    flex-basis: content;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .accordion-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    margin: 1px;
+    width: 100%;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+    margin: 1px;
+  }
+
+  .accordion-body {
+    justify-content: space-evenly;
+    font-size: 11px;
+    margin: 1px;
+  }
+}
+/* ----------------------Fin seccion Nosotros */
+/* --------------------------Seccion Servicios */
+.cards-servicios {
+  margin: 40px 30px;
+  position: absolute;
+}
+.cards-servicios .card {
+  position: relative;
+  flex-direction: row;
+  margin: 7px 3px 7px 3px;
+  width: 100%;
+  background-image: linear-gradient(rgba(245, 224, 234, 0.514), rgba(129, 253, 243, 0.493));
+  background: border-box;
+  box-shadow: 10px 5px 5px rgba(255, 153, 153, 0.226);
+}
+.cards-servicios .card-body {
+  background-image: linear-gradient(rgba(245, 224, 234, 0.514), rgba(129, 253, 243, 0.493));
+  background: border-box;
+  box-shadow: 10px 5px 5px rgba(255, 153, 153, 0.226);
+}
+.cards-servicios .card-title {
+  color: #160916;
+  font-family: "Exo", sans-serif;
+}
+.cards-servicios .card-text {
+  color: #160916;
+  font-family: "Exo", sans-serif;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 200px) {
+  .card-img-top {
+    display: none;
+  }
+
+  .cards-servicios {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/* -----------------------Fin seccion Servicios */
+/* Seccion Cursos */
+.cards-cursos {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.cards-cursos .cards-container {
+  position: relative;
+  flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+.cards-cursos .cards-container .card {
+  position: relative;
+  flex-direction: row;
+  margin: 7px 3px 7px 3px;
+  width: 100%;
+  background-image: linear-gradient(rgba(245, 224, 234, 0.514), rgba(129, 253, 243, 0.493));
+  background: border-box;
+  box-shadow: 10px 5px 5px rgba(255, 153, 153, 0.226);
+}
+.cards-cursos .cards-container .card .card-title {
+  text-align: center;
+  color: #1d1b1b;
+  font-family: "Exo", sans-serif;
+}
+.cards-cursos .cards-container .card .card-text {
+  padding-top: 6px;
+  color: #1d1b1b;
+  font-family: "Exo", sans-serif;
+}
+.cards-cursos .cards-container .card .card-subtitle {
+  text-align: center;
+  color: #1d1b1b;
+  font-family: "Exo", sans-serif;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 200px) {
+  .main {
+    flex-basis: content;
+    flex-direction: column;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    margin: 1px;
+    width: 100%;
+  }
+
+  .card {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .card-body {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin: 1px;
+  }
+
+  .card-subtitle mb-2 text-muted {
+    justify-content: space-evenly;
+    font-size: 13px;
+    margin: 1px;
+  }
+}
+/* Fin de seccion Cursos */
+/* footer */
+.footer-container {
+  display: list-item;
+  bottom: 0;
+  padding: 5px 30px;
+  background-color: rgba(238, 176, 238, 0.1098039216);
+  width: 100%;
+  position: absolute;
+  font-size: 12px;
+  margin-top: auto;
+}
+.footer-container h3 {
+  font-size: 15px;
+}
+.footer-container .btn-social {
+  color: rgba(43, 41, 41, 0.877);
+}
+.footer-container .btn-social:hover {
+  color: rgb(8, 185, 185);
+}
+.footer-container .btn-social:visited {
+  color: #035a4c;
+  font-size: 1.3rem;
+}
+
+.btn-social:active {
+  color: #000000;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 200px) {
+  .footer-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    margin-top: auto;
+    width: 100%;
+    position: absolute;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 1px;
+  }
+
+  p {
+    justify-content: space-evenly;
+    font-size: 13px;
+    margin: 1px;
+  }
+}
+/* --------------------------Seccion Contacto */
+.card-contacto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #3b3737;
+  text-align: center;
+  margin: 30px 25px;
+  width: 95%;
+  padding: 10px;
+  background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+  box-shadow: 10px 5px 5px rgba(255, 153, 153, 0.226);
+  color: #1d1b1b;
+  font-family: "Exo", sans-serif;
+}
+.card-contacto .card-title-contacto {
+  font-size: 40px;
+  font-weight: 300;
+  color: rgba(57, 32, 58, 0.6117647059);
+  font-family: "Vollkorn", serif;
+}
+.card-contacto .mb-3 {
+  margin: 10px 60px;
+  color: #1d1b1b;
+  font-family: "Vollkorn", serif;
+}
+
+/*-----------------------FIN de seccion contacto */
+.cards-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

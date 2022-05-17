@@ -1,0 +1,84 @@
+/* Seccion Nosotros */
+@import '../base/variables';
+@import '../base/mixin';
+
+.accordion{
+    position: relative;
+    @include flex(flex, center);
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: $box-shadow;
+    background-image: linear-gradient(rgba(245, 224, 234, 0.253), rgba(250, 250, 250, 0.336));
+    margin: 40px;
+    font-size: 20px;
+    color: #39203a9c;
+    font-family: 'Vollkorn', serif;
+    
+    & .accordion-button {
+    background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+    }
+    & .accordion-button collapsed{
+    background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+    }
+    & .accordion-body{
+    background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));   
+    }
+    & .accordion-item{
+    background-image: linear-gradient(rgba(245, 224, 234, 0.377), rgba(250, 250, 250, 0.5));
+    }
+}
+
+
+@media only screen and (max-width: 960px) and (min-width: 660px) {    
+    .accordion{
+        flex-basis: content;
+        flex-direction: column;
+    }
+    .accordion-item{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 2px;
+        margin: 1px;
+        width: 100%;
+    }
+    .accordion-header{
+        font-size: 16px;
+        margin: 1px;
+    }
+    .accordion-body{
+        justify-content: space-evenly;
+        font-size: 13px;
+        margin: 1px;
+    }
+}
+@media only screen and (max-width: 659px) and (min-width: 200px) {    
+    .accordion{
+        flex-basis: content;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .accordion-item{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 1px;
+        margin: 1px;
+        width: 100%;
+    }
+    .accordion-header{
+        font-size: 16px;
+        margin: 1px;
+    }
+    .accordion-body{
+        justify-content: space-evenly;
+        font-size: 11px;
+        margin: 1px;
+    }
+}
+
+
+/* ----------------------Fin seccion Nosotros */
+

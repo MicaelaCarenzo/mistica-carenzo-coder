@@ -1,0 +1,60 @@
+/* footer */
+
+.footer-container{
+    display: list-item;
+    bottom: 0;
+    padding: 5px 30px;
+    background-color: #eeb0ee1c;
+    width: 100%;
+    position: absolute;
+    font-size: 12px;
+    margin-top: auto;
+
+    & h3 {
+        font-size: 15px;
+    }
+    & .btn-social {
+      color: rgba(43, 41, 41, 0.877);
+    }
+    
+    & .btn-social:hover{
+        color: rgb(8, 185, 185);
+    }
+    
+    & .btn-social:visited{
+        color: #035a4c;
+        font-size: 1.3rem;
+    }
+    
+}
+
+
+.btn-social:active{
+    color: #000000;
+    font-size: 1.3rem;
+
+}
+@media only screen and (max-width: 960px) and (min-width: 200px) {    
+
+    .footer-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 2px;
+        margin-top: auto;
+        width: 100%;
+        position: absolute;
+
+    }
+
+    h3{
+        font-size: 16px;
+        margin: 1px;
+    }
+    p{
+        justify-content: space-evenly;
+        font-size: 13px;
+        margin: 1px;
+    }
+}

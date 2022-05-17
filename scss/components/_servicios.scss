@@ -1,0 +1,47 @@
+/* --------------------------Seccion Servicios */
+@import '../base/mapas';
+@import '../base/variables';
+
+
+.cards-servicios{
+    margin:40px 30px;
+    position: absolute;
+    @extend %flex;
+
+    & .card {
+        position: relative;
+        flex-direction: row;
+        margin: 7px 3px 7px 3px;
+        width: 100%;
+        background-image: map-get($map: $cards, $key: bg-ig);
+        background: border-box;
+        box-shadow: $box-shadow;
+    }
+
+    & .card-body {
+    background-image: map-get($map: $cards, $key: bg-ig);
+    background: border-box;
+    box-shadow: $box-shadow;
+    }
+
+    & .card-title{
+        color: #160916;
+        font-family: 'Exo', sans-serif;
+    }
+    & .card-text{
+        color: #160916;
+        font-family: 'Exo', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 200px) {    
+   .card-img-top{
+       display: none;
+   }
+   .cards-servicios {
+       margin-top: 5%;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+}
+/* -----------------------Fin seccion Servicios */

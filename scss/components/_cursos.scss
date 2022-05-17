@@ -1,0 +1,86 @@
+/* Seccion Cursos */
+@import '../base/variables';
+@import '../base/mapas';
+
+.cards-cursos{
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    & .cards-container {
+        position: relative;
+        flex-direction: row;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        justify-content: space-evenly;
+
+        & .card{
+            position: relative;
+            flex-direction: row;
+            margin: 7px 3px 7px 3px;
+            width: 100%;
+            background-image: map-get($map: $cards, $key: bg-ig);
+            background: border-box;
+            box-shadow: $box-shadow;
+            
+            & .card-title{
+                text-align: center;
+                color: #1d1b1b;
+                font-family: 'Exo', sans-serif;
+            }
+            & .card-text{
+                padding-top: 6px;
+                color: #1d1b1b;
+                font-family: 'Exo', sans-serif;
+            }
+            & .card-subtitle{
+                text-align: center;
+                color: #1d1b1b;
+                font-family: 'Exo', sans-serif;
+            }
+        }
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 700px) and (min-width: 200px) {    
+    .main {
+        flex-basis: content;
+        flex-direction: column;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 2px;
+        margin: 1px;
+        width: 100%;
+    }
+
+    .card{
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .card-body{
+        margin-top: 4px;
+        margin-bottom: 4px;    
+    }
+
+    .card-title{
+        font-size: 16px;
+        margin: 1px;
+    }
+
+    .card-subtitle mb-2 text-muted{
+        justify-content: space-evenly;
+        font-size: 13px;
+        margin: 1px;
+    }
+}
+
+/* Fin de seccion Cursos */

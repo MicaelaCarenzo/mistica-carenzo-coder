@@ -1,0 +1,47 @@
+// .body-index{
+
+//     .body{
+//         background-image: url(../assets/wallpaperpages.png);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-attachment: fixed;
+    
+//         & .body-index{
+//             background-image: url(../assets/wallpaperpages.png);
+//             background-size: cover;
+//             background-repeat: no-repeat;
+//             background-attachment: scroll;
+//         }
+//     }
+// }
+h1 {
+    display: none;
+}
+
+.main-index{
+    padding: 40px 250px;
+    display: flexbox;
+    position: relative;
+
+    & carousel-container-index {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1090px) and (min-width: 200px) {    
+    .main-index{
+        padding-top: 10px;
+        display: inline;
+        position: relative;
+        flex-direction: column;
+    }
+    .carousel-container-index {
+        display: inline;
+        justify-content: space-evenly;
+        width: 100%;
+        background-attachment: scroll;
+    }
+}
