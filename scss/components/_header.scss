@@ -26,7 +26,7 @@
 @media only screen and (max-width: 1089px) and (min-width: 200px){
     .body{
         background-image: url(../assets/wallpaperpages.png);
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
         background-attachment: scroll;
     }
@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 1089px) and (min-width: 200px){
 .body-index{
-    background-image: url(../assets/wallpaperpages.png);
+    background-image: none;
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -43,6 +43,9 @@
 }
     
 /* ----------------------------------Nav Bar */
+
+
+
 #navbarNav :hover{
     color: rgb(8, 185, 185);
 }

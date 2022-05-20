@@ -1,47 +1,61 @@
-// .body-index{
 
-//     .body{
-//         background-image: url(../assets/wallpaperpages.png);
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         background-attachment: fixed;
-    
-//         & .body-index{
-//             background-image: url(../assets/wallpaperpages.png);
-//             background-size: cover;
-//             background-repeat: no-repeat;
-//             background-attachment: scroll;
-//         }
-//     }
-// }
-h1 {
-    display: none;
+@font-face {
+    font-family: Rasputin;
+    src: url(../../assets/Rasputin.otf);
 }
-
-.main-index{
-    padding: 40px 250px;
+.gif-index{
+    padding: 40px 60px;
+    justify-content: center;
+    align-items: center;
     display: flexbox;
     position: relative;
-
-    & carousel-container-index {
-        display: flex;
-        justify-content: space-evenly;
+    box-shadow: -1px 2px 28px -5px rgba(250,247,183,0.35);
+    -webkit-box-shadow: -1px 2px 28px -5px rgba(250,247,183,0.35);
+    -moz-box-shadow: -1px 2px 28px -5px rgba(250,247,183,0.35);
+    & .gif{
+        align-items: center;
+        width: fit-content;
         width: 100%;
+        animation-play-state: running;
     }
 }
 
-
-@media only screen and (max-width: 1090px) and (min-width: 200px) {    
-    .main-index{
-        padding-top: 10px;
-        display: inline;
-        position: relative;
-        flex-direction: column;
+.info{
+    margin: 40px 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #f0e2d775;
+    box-shadow: -1px 2px 28px -5px rgba(250,247,183,0.35);
+    -webkit-box-shadow: -1px 2px 28px -5px rgba(250,247,183,0.35);
+    -moz-box-shadow: -1px 2px 28px -5px rgba(250,247,183,0.35);
+    font-family: rasputin;
+    color: #33292194;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    
+    & .title-dos {
+        color: #312820b0;
     }
-    .carousel-container-index {
-        display: inline;
-        justify-content: space-evenly;
-        width: 100%;
-        background-attachment: scroll;
+
+}
+
+
+@media only screen and (max-width: 1096px) and (min-width: 200px){
+    .gif-index{
+        display: none;
+    }
+    .body-index{
+       background-color:  #f0e2d775;
+    }
+    .info{
+        margin: 4%;
+        & p {
+            font-size: 15px;
+        }
     }
 }

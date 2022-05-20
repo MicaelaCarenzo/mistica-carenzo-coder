@@ -1,42 +1,53 @@
 /* Seccion Cursos */
 @import '../base/variables';
 @import '../base/mapas';
+@font-face {
+    font-family: Rasputin;
+    src: url(../../assets/Rasputin.otf);
+}
+
 
 .cards-cursos{
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 3%;
 
     & .cards-container {
-        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flexbox;
         flex-direction: row;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
-        justify-content: space-evenly;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 7px;
+        // justify-content: space-evenly;
 
         & .card{
             position: relative;
             flex-direction: row;
             margin: 7px 3px 7px 3px;
-            width: 100%;
             background-image: map-get($map: $cards, $key: bg-ig);
             background: border-box;
             box-shadow: $box-shadow;
+            font-family: rasputin;
+            color: #3a3026b2;
+            text-align: center;
+            font-weight: 500;
             
             & .card-title{
                 text-align: center;
-                color: #1d1b1b;
-                font-family: 'Exo', sans-serif;
+                font-weight: 800;
+                // color: #1d1b1b;
+                // font-family: 'Exo', sans-serif;
             }
             & .card-text{
                 padding-top: 6px;
-                color: #1d1b1b;
-                font-family: 'Exo', sans-serif;
+                // color: #1d1b1b;
+                // font-family: 'Exo', sans-serif;
             }
             & .card-subtitle{
                 text-align: center;
-                color: #1d1b1b;
-                font-family: 'Exo', sans-serif;
+                // color: #1d1b1b;
+                // font-family: 'Exo', sans-serif;
             }
         }
     }
@@ -81,6 +92,13 @@
         font-size: 13px;
         margin: 1px;
     }
+}
+.carrousel-cursos{
+    margin: 30px 45px;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    position: relative;
 }
 
 /* Fin de seccion Cursos */

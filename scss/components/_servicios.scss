@@ -1,6 +1,10 @@
 /* --------------------------Seccion Servicios */
 @import '../base/mapas';
 @import '../base/variables';
+@font-face {
+    font-family: Rasputin;
+    src: url(../../assets/Rasputin.otf);
+}
 
 
 .cards-servicios{
@@ -25,12 +29,12 @@
     }
 
     & .card-title{
-        color: #160916;
-        font-family: 'Exo', sans-serif;
+        font-family: rasputin;
+        color: #33292194;
     }
     & .card-text{
-        color: #160916;
-        font-family: 'Exo', sans-serif;
+        font-family: rasputin;
+        color: #33292194;
     }
 }
 
