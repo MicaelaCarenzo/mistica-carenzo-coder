@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Micaela Carenzo</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
-- 🔭 I’m currently working on **Peugeot**
+- 🔭 I’m currently working at **DS Automobile**
 
 - 🌱 I’m currently studying front end - web development at **Coder House**
 
