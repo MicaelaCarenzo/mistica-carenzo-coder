@@ -2,6 +2,15 @@
     padding: 0;
     margin: 0;
 }
+
+@import '../base/variables';
+
+.navbar{
+    box-shadow: $box-shadow;
+    font-family: rasputin;
+    font-size: 19px;
+}
+
 .body-index{
     background-image: url(../assets/wallpaperpages.png);
     background-size: cover;
@@ -26,7 +35,7 @@
 @media only screen and (max-width: 1089px) and (min-width: 200px){
     .body{
         background-image: url(../assets/wallpaperpages.png);
-        background-size: auto;
+        background-size: cover;
         background-repeat: no-repeat;
         background-attachment: scroll;
     }
@@ -35,8 +44,8 @@
 
 @media only screen and (max-width: 1089px) and (min-width: 200px){
 .body-index{
-    background-image: none;
-    background-size: auto;
+    background-image: url(../assets/wallpaperpages.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
 }

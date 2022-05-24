@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+.navbar {
+  box-shadow: -1px 2px 28px -5px rgba(255, 253, 220, 0.541);
+  font-family: rasputin;
+  font-size: 19px;
+}
+
 .body-index {
   background-image: url(../assets/wallpaperpages.png);
   background-size: cover;
@@ -26,15 +32,15 @@
 @media only screen and (max-width: 1089px) and (min-width: 200px) {
   .body {
     background-image: url(../assets/wallpaperpages.png);
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
 }
 @media only screen and (max-width: 1089px) and (min-width: 200px) {
   .body-index {
-    background-image: none;
-    background-size: auto;
+    background-image: url(../assets/wallpaperpages.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
@@ -65,6 +71,57 @@
   animation-play-state: running;
 }
 
+.image-mobile1 {
+  display: none;
+}
+
+.image-mobile2 {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 650px) {
+  .gif-index {
+    display: none;
+  }
+  .gif-index .gif {
+    display: none;
+  }
+
+  .image-mobile {
+    margin: 20px;
+  }
+  .image-mobile .image-mobile1 {
+    display: flex;
+    width: 100%;
+  }
+  .image-mobile .image-mobile2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 200px) {
+  .gif-index {
+    display: none;
+  }
+  .gif-index .gif {
+    display: none;
+  }
+
+  .image-mobile {
+    margin: 10px;
+  }
+  .image-mobile .image-mobile1 {
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 200px) {
+  .image-mobile2 {
+    display: flex;
+    width: 100%;
+    height: min-content;
+  }
+}
 .info {
   margin: 40px 60px;
   justify-content: center;
@@ -87,20 +144,20 @@
   color: rgba(49, 40, 32, 0.6901960784);
 }
 
-@media only screen and (max-width: 1096px) and (min-width: 200px) {
-  .gif-index {
-    display: none;
-  }
-
-  .body-index {
-    background-color: rgba(240, 226, 215, 0.4588235294);
-  }
-
+@media only screen and (max-width: 950px) and (min-width: 650px) {
   .info {
-    margin: 4%;
+    margin: 20px;
   }
-  .info p {
-    font-size: 15px;
+  .info .p-index {
+    font-size: large;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 200px) {
+  .info {
+    margin: 10px;
+  }
+  .info .p-index {
+    font-size: large;
   }
 }
 /* Seccion Nosotros */
@@ -108,36 +165,57 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 40px 50px;
   justify-content: center;
   display: flex;
   position: relative;
-  flex-direction: column;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.nosotros-info .card-nosotros {
+  margin: 10px 50px;
+  padding: 5px;
   background-color: rgba(247, 238, 232, 0.4588235294);
   box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
   -webkit-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
   -moz-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
   font-family: rasputin;
   color: rgba(51, 41, 33, 0.5803921569);
-  font-weight: 400;
-  font-size: 20px;
-  padding: 15px;
-  text-align: center;
 }
 
-@media only screen and (max-width: 1089px) and (min-width: 200px) {
-  .img-nosotros {
-    display: none;
-  }
-
+@media only screen and (max-width: 1080px) and (min-width: 700px) {
   .nosotros-info {
     margin: 5px;
   }
-  .nosotros-info p {
-    font-size: 17px;
+  .nosotros-info .card-nosotros {
+    margin-top: 10px;
+    font-size: 20px;
   }
-  .nosotros-info h2 {
-    margin-top: 20px;
+  .nosotros-info .p-nos {
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 699px) and (min-width: 200px) {
+  .nosotros-info {
+    text-align: center;
+  }
+  .nosotros-info .card-nosotros {
+    margin: 7px;
+    padding: 3px;
+    background-color: rgba(247, 238, 232, 0.5215686275);
+    box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
+    -webkit-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
+    -moz-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
+    font-family: rasputin;
+    color: rgba(51, 41, 33, 0.6705882353);
+  }
+  .nosotros-info .img-nosotros {
+    display: none;
+  }
+  .nosotros-info .p-nos {
+    font-size: 17px;
+    font-weight: 500;
   }
 }
 /* ----------------------Fin seccion Nosotros */
@@ -149,6 +227,7 @@
 .cards-servicios {
   margin: 40px 30px;
   position: absolute;
+  position: relative;
 }
 .cards-servicios .card {
   position: relative;
@@ -167,13 +246,15 @@
 .cards-servicios .card-title {
   font-family: rasputin;
   color: rgba(51, 41, 33, 0.5803921569);
+  font-weight: 700;
 }
 .cards-servicios .card-text {
   font-family: rasputin;
   color: rgba(51, 41, 33, 0.5803921569);
+  font-size: 20px;
 }
 
-@media only screen and (max-width: 700px) and (min-width: 200px) {
+@media only screen and (max-width: 900px) and (min-width: 200px) {
   .card-img-top {
     display: none;
   }
@@ -182,6 +263,13 @@
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    position: relative;
+  }
+  .cards-servicios .card-title {
+    font-size: larger;
+  }
+  .cards-servicios .card-text {
+    font-size: large;
   }
 }
 /* -----------------------Fin seccion Servicios */
@@ -190,87 +278,49 @@
   font-family: Rasputin;
   src: url(../../assets/Rasputin.otf);
 }
-.cards-cursos {
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-.cards-cursos .cards-container {
+.container-cursos {
   justify-content: center;
   align-items: center;
-  display: flexbox;
-  flex-direction: row;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
 }
-.cards-cursos .cards-container .card {
+.container-cursos .card-curso {
+  display: flex;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
   margin: 7px 3px 7px 3px;
   background-image: linear-gradient(rgba(245, 224, 234, 0.514), rgba(129, 253, 243, 0.493));
   background: border-box;
   box-shadow: -1px 2px 28px -5px rgba(255, 253, 220, 0.541);
   font-family: rasputin;
-  color: rgba(58, 48, 38, 0.6980392157);
+  color: rgba(58, 48, 38, 0.6862745098);
   text-align: center;
-  font-weight: 500;
 }
-.cards-cursos .cards-container .card .card-title {
+.container-cursos .card-curso .card-title {
   text-align: center;
   font-weight: 800;
+  padding: 10px;
 }
-.cards-cursos .cards-container .card .card-text {
-  padding-top: 6px;
+.container-cursos .card-curso .cardcurso-text {
+  padding: 6px;
+  font-size: 20px;
 }
-.cards-cursos .cards-container .card .card-subtitle {
+.container-cursos .card-curso .card-subtitle {
   text-align: center;
+  font-size: 15px;
+}
+
+.carrousel-cursos {
+  margin: 10px;
 }
 
 @media only screen and (max-width: 700px) and (min-width: 200px) {
-  .main {
-    flex-basis: content;
-    flex-direction: column;
-  }
-
-  .cards-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 2px;
-    margin: 1px;
-    width: 100%;
-  }
-
-  .card {
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-
-  .card-body {
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-
-  .card-title {
-    font-size: 16px;
-    margin: 1px;
-  }
-
-  .card-subtitle mb-2 text-muted {
-    justify-content: space-evenly;
-    font-size: 13px;
-    margin: 1px;
+  .carrousel-cursos {
+    margin: 5px;
   }
 }
-.carrousel-cursos {
-  margin: 30px 45px;
-  justify-content: center;
-  align-items: center;
-  display: flexbox;
-  position: relative;
-}
-
 /* Fin de seccion Cursos */
 /* footer */
 @font-face {

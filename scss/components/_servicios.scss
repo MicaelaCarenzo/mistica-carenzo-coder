@@ -11,6 +11,7 @@
     margin:40px 30px;
     position: absolute;
     @extend %flex;
+    position: relative;
 
     & .card {
         position: relative;
@@ -31,14 +32,16 @@
     & .card-title{
         font-family: rasputin;
         color: #33292194;
+        font-weight: 700;
     }
     & .card-text{
         font-family: rasputin;
         color: #33292194;
+        font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 700px) and (min-width: 200px) {    
+@media only screen and (max-width: 900px) and (min-width: 200px) {    
    .card-img-top{
        display: none;
    }
@@ -46,6 +49,14 @@
        margin-top: 5%;
        margin-left: 5%;
        margin-right: 5%;
+       position: relative;
+    
+       & .card-title{
+        font-size: larger;
+       }
+       & .card-text{
+        font-size: large;
+       }
    }
 }
 /* -----------------------Fin seccion Servicios */
