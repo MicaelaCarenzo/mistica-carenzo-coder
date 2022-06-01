@@ -13,18 +13,19 @@
     display: flex;
     flex-direction: column;
     margin-top: 5px;
+    margin: 10px 60px 10px 60px;
 
     & .card-curso{
+        margin: 20px;
         display: flex;
         position: relative;
         flex-direction: column;
         width: 100%;
-        margin: 7px 3px 7px 3px;
-        background-image: map-get($map: $cards, $key: bg-ig);
         background: border-box;
         box-shadow: $box-shadow;
+        background-color: #130113d3;
         font-family: rasputin;
-        color: #3a3026af;
+        color: #aaa9a894;
         text-align: center;
         
         & .card-title{

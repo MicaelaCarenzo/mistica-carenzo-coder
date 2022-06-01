@@ -3,80 +3,58 @@
   margin: 0;
 }
 
-.navbar {
-  box-shadow: -1px 2px 28px -5px rgba(255, 253, 220, 0.541);
-  font-family: rasputin;
-  font-size: 19px;
+.nav-icon {
+  width: 42px;
+  height: auto;
 }
 
-.body-index {
-  background-image: url(../assets/wallpaperpages.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-.body {
-  background-image: url(../assets/wallpaperpages.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.body .body-index {
-  background-image: url(../assets/wallpaperpages.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-@media only screen and (max-width: 1089px) and (min-width: 200px) {
-  .body {
-    background-image: url(../assets/wallpaperpages.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-  }
-}
-@media only screen and (max-width: 1089px) and (min-width: 200px) {
-  .body-index {
-    background-image: url(../assets/wallpaperpages.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-  }
-}
-/* ----------------------------------Nav Bar */
 #navbarNav :hover {
   color: rgb(8, 185, 185);
 }
 
+.body {
+  background: rgb(7, 0, 36);
+  background: linear-gradient(189deg, rgb(7, 0, 36) 0%, rgb(76, 22, 80) 48%, rgb(42, 108, 76) 100%);
+}
+
+/* ----------------------------------Nav Bar */
 @font-face {
   font-family: Rasputin;
   src: url(../../assets/Rasputin.otf);
 }
-.gif-index {
-  padding: 40px 60px;
-  justify-content: center;
-  align-items: center;
-  display: flexbox;
+.main-index {
+  display: flex;
+  flex-direction: column;
+  color: rgba(170, 169, 168, 0.5803921569);
+  font-family: rasputin;
+  text-align: center;
+  margin: 50px;
+}
+.main-index .title-index {
+  font-size: 120px;
+  letter-spacing: 5px;
+}
+.main-index .subtitle-index {
+  font-size: 65px;
+  padding-top: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  margin: 50px;
+}
+.botones .img-boton {
+  width: 400px;
+  height: 300px;
   position: relative;
-  box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-  -webkit-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-  -moz-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
 }
-.gif-index .gif {
-  align-items: center;
-  width: fit-content;
-  width: 100%;
-  animation-play-state: running;
-}
-
-.image-mobile1 {
-  display: none;
-}
-
-.image-mobile2 {
-  display: none;
+.botones .texto-boton {
+  font-size: 20px;
+  color: antiquewhite;
+  background-color: rgba(63, 11, 63, 0.466);
 }
 
 @media only screen and (max-width: 950px) and (min-width: 650px) {
@@ -160,72 +138,12 @@
     font-size: large;
   }
 }
-/* Seccion Nosotros */
-.nosotros-info {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-  position: relative;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-}
-.nosotros-info .card-nosotros {
-  margin: 10px 50px;
-  padding: 5px;
-  background-color: rgba(247, 238, 232, 0.4588235294);
-  box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-  -webkit-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-  -moz-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-  font-family: rasputin;
-  color: rgba(51, 41, 33, 0.5803921569);
-}
-
-@media only screen and (max-width: 1080px) and (min-width: 700px) {
-  .nosotros-info {
-    margin: 5px;
-  }
-  .nosotros-info .card-nosotros {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-  .nosotros-info .p-nos {
-    font-size: 17px;
-    font-weight: 500;
-  }
-}
-@media only screen and (max-width: 699px) and (min-width: 200px) {
-  .nosotros-info {
-    text-align: center;
-  }
-  .nosotros-info .card-nosotros {
-    margin: 7px;
-    padding: 3px;
-    background-color: rgba(247, 238, 232, 0.5215686275);
-    box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-    -webkit-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-    -moz-box-shadow: -1px 2px 28px -5px rgba(250, 247, 183, 0.35);
-    font-family: rasputin;
-    color: rgba(51, 41, 33, 0.6705882353);
-  }
-  .nosotros-info .img-nosotros {
-    display: none;
-  }
-  .nosotros-info .p-nos {
-    font-size: 17px;
-    font-weight: 500;
-  }
-}
-/* ----------------------Fin seccion Nosotros */
-/* --------------------------Seccion Servicios */
 @font-face {
   font-family: Rasputin;
   src: url(../../assets/Rasputin.otf);
 }
 .cards-servicios {
-  margin: 40px 30px;
+  margin: 40px 70px;
   position: absolute;
   position: relative;
 }
@@ -234,23 +152,25 @@
   flex-direction: row;
   margin: 7px 3px 7px 3px;
   width: 100%;
-  background-image: linear-gradient(rgba(245, 224, 234, 0.514), rgba(129, 253, 243, 0.493));
+  font-family: rasputin;
+  color: rgba(170, 169, 168, 0.5803921569);
   background: border-box;
-  box-shadow: -1px 2px 28px -5px rgba(255, 253, 220, 0.541);
+  box-shadow: -1px 2px 20px -5px rgba(255, 253, 220, 0.178);
 }
 .cards-servicios .card-body {
-  background-image: linear-gradient(rgba(245, 224, 234, 0.514), rgba(129, 253, 243, 0.493));
-  background: border-box;
-  box-shadow: -1px 2px 28px -5px rgba(255, 253, 220, 0.541);
+  background-color: rgba(19, 1, 19, 0.8274509804);
+  font-family: rasputin;
+  color: rgba(170, 169, 168, 0.5803921569);
+  box-shadow: -1px 2px 20px -5px rgba(255, 253, 220, 0.178);
 }
 .cards-servicios .card-title {
   font-family: rasputin;
-  color: rgba(51, 41, 33, 0.5803921569);
+  color: rgba(170, 169, 168, 0.5803921569);
   font-weight: 700;
 }
 .cards-servicios .card-text {
   font-family: rasputin;
-  color: rgba(51, 41, 33, 0.5803921569);
+  color: rgba(170, 169, 168, 0.5803921569);
   font-size: 20px;
 }
 
@@ -284,18 +204,19 @@
   display: flex;
   flex-direction: column;
   margin-top: 5px;
+  margin: 10px 60px 10px 60px;
 }
 .container-cursos .card-curso {
+  margin: 20px;
   display: flex;
   position: relative;
   flex-direction: column;
   width: 100%;
-  margin: 7px 3px 7px 3px;
-  background-image: linear-gradient(rgba(245, 224, 234, 0.514), rgba(129, 253, 243, 0.493));
   background: border-box;
-  box-shadow: -1px 2px 28px -5px rgba(255, 253, 220, 0.541);
+  box-shadow: -1px 2px 20px -5px rgba(255, 253, 220, 0.178);
+  background-color: rgba(19, 1, 19, 0.8274509804);
   font-family: rasputin;
-  color: rgba(58, 48, 38, 0.6862745098);
+  color: rgba(170, 169, 168, 0.5803921569);
   text-align: center;
 }
 .container-cursos .card-curso .card-title {
@@ -328,34 +249,42 @@
   src: url(../../assets/Rasputin.otf);
 }
 .footer-container {
-  display: list-item;
+  display: flex;
+  flex-direction: row;
   bottom: 0 !important;
   margin-top: 100%;
-  padding: 5px 30px;
-  background-color: rgba(238, 176, 238, 0.1098039216);
+  padding: 20px;
+  background-color: rgba(19, 1, 19, 0.8274509804);
   width: 100%;
   font-family: rasputin;
-  color: rgba(51, 41, 33, 0.5803921569);
+  color: rgba(170, 169, 168, 0.5803921569);
   position: relative;
-  font-size: 12px;
+  font-size: 17px;
   margin-top: auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.footer-container .seccion {
+  align-items: center;
+  margin: 30px;
+}
+.footer-container .seccion-form-area {
+  width: max-content;
+}
+.footer-container .form-item {
+  background-color: rgba(255, 232, 248, 0.8901960784);
 }
 .footer-container h3 {
-  font-size: 15px;
+  font-size: 20px;
 }
 .footer-container .btn-social {
-  color: rgba(43, 41, 41, 0.877);
+  color: aaa9a894(43, 41, 41, 0.877);
 }
 .footer-container .btn-social:hover {
   color: rgb(8, 185, 185);
 }
 .footer-container .btn-social:visited {
-  color: #035a4c;
-  font-size: 1.3rem;
-}
-
-.btn-social:active {
-  color: #000000;
+  color: rgba(170, 169, 168, 0.5803921569);
   font-size: 1.3rem;
 }
 
@@ -382,36 +311,6 @@
     margin: 1px;
   }
 }
-/* --------------------------Seccion Contacto */
-@font-face {
-  font-family: Rasputin;
-  src: url(../../assets/Rasputin.otf);
-}
-.card-contacto {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: #3b3737;
-  text-align: center;
-  margin: 30px 25px;
-  width: 95%;
-  padding: 10px;
-  background-color: rgba(240, 226, 215, 0.4588235294);
-  box-shadow: -1px 2px 28px -5px rgba(255, 253, 220, 0.541);
-  font-family: rasputin;
-  color: rgba(51, 41, 33, 0.6705882353);
-}
-.card-contacto .card-title-contacto {
-  font-size: 40px;
-  font-weight: 500;
-}
-.card-contacto .mb-3 {
-  margin: 10px 60px;
-}
-
-/*-----------------------FIN de seccion contacto */
 .cards-servicios {
   display: flex;
   flex-direction: column;

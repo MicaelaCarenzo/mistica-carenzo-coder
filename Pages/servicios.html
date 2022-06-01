@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Servicios</title>
 </head>
-<body class="body-index">
+<body class="body">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/favicon.png" class="nav-icon"></a>  
+          <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,16 +27,13 @@
                     <a class="nav-link" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./cursos.html">Cursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                    <a class="nav-link" href="./novedades.html">Novedades</a>
                   </li>
                 </ul>
               </div>
@@ -45,7 +43,7 @@
     <main>
         <article class="cards-servicios">
             <div class="card mb-3">
-                <img class="card-img-top" src="../assets/serviciostarot.jpg" alt="Tarot Evolutivo foto de las cartas">
+                <!-- <img class="card-img-top" src="../assets/serviciostarot.jpg" alt="Tarot Evolutivo foto de las cartas"> -->
                 <div class="card-body">
                     <h5 class="card-title">Tarot evolutivo</h5>
                         <p class="card-text">El tarot es una herramienta que nos ayuda a ver y entender las energias disponibles en nuestra vida.<br>
@@ -57,7 +55,6 @@
                 </div>
             </div>
             <div class="card mb-3">
-                    <img class="card-img-top" src="../assets/piedrareiki5.jpg" alt="Foto de reiki">
                 <div class="card-body">
                     <h5 class="card-title">Reiki</h5>
                     <p class="card-text">En nuestras terapias de Reiki encontraras el complemento ideal para lograr armonia, paz y equilibrio.
@@ -72,7 +69,6 @@
                 </div>
             </div>
             <div class="card mb-3">
-                <img class="card-img-top" src="../assets/pendulo.jpg" alt="Foto de un pendulo en referencia a las lecturas de pendulo">
                 <div class="card-body">
                     <h5 class="card-title">Lecturas de Pendulo</h5>
                         <p class="card-text">El péndulo adivinatorio es un objeto pequeño constituido de cierto peso y se encuentra suspendido a una cuerda. Este objeto ha sido utilizado desde la antigüedad en radiestesia. La radiestesia permite capturar las radiaciones 
@@ -85,7 +81,6 @@
                 </div>
             </div>
             <div class="card mb-3">
-                    <img class="card-img-top" src="../assets/piedrareiki4.jpg" alt="Foto de cristales energeticos en referencia a las terapias con cristales">
                 <div class="card-body">
                     <h5 class="card-title">Terapias con cristales</h5>
                     <p class="card-text">La sanación de cristales se utiliza tanto en niveles físicos, emocionales y espirituales. La curación consiste en colocar las piedras en
@@ -98,28 +93,35 @@
             </div>
           </article>
 </main>
-<!-- <footer class="footer-container">
-    <div class="row">
-      <div class="col-md-4 footer-col">
-        <h3>Dirección</h3>
-          <p>
-            Recoleta - Argentina <br/>
-          </p>
-      </div>
-      <div class="col-md-4 footer-col">
-        <h3>Mis redes</h3>
-          <ul class="list-inline">
-            <li>
-              <a  target="_blank" href="https://www.instagram.com/mistica.reiki/?hl=en" class="btn-social btn-outline">Instagram<i class="fa fa-fw fa-facebook"></i></a>
-            </li>
-          </ul>
-      </div>
-      <div class="col-md-4 footer-col">
-        <h3>Ponete en contacto con nosotros</h3>
-          <p>+54 9 11 4814-5407</p>
-        </div>
+<footer>
+  <div class="footer-container">
+    <div class="seccion">
+      <h3>Dirección</h3>
+        <p>
+          Recoleta - Argentina <br/>
+        </p>
+        <h3>Nuestras redes</h3>
+        <ul class="list-inline">
+          <li>
+            <a  target="_blank" href="https://www.instagram.com/mistica.reiki/?hl=en" class="btn-social btn-outline">Instagram</a>
+          </li>
+        </ul>
+        <p>+54 9 11 4814-5407</p>
     </div>
-  </footer> -->
+    <div class="seccion form">
+      <p class="card-text">Dejanos tus datos y nos pondremos en contacto</p>
+    <div class="form-area">
+        <input type="email" class="form-item" placeholder="nombre@ejemplo.com">
+    </div>
+    <div class="form-area">
+        <textarea class="form-item" placeholder="Deja aqui tu consulta" rows="2"></textarea>
+    </div>
+    <div class="form-area">
+      <input type="number" class="form-item" placeholder="telefono de contacto">
+  </div>
+  </div>
+  </div>
+</footer>
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

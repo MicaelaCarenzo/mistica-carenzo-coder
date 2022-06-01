@@ -1,4 +1,4 @@
-/* --------------------------Seccion Servicios */
+//* --------------------------Seccion Servicios */
 @import '../base/mapas';
 @import '../base/variables';
 @font-face {
@@ -8,7 +8,7 @@
 
 
 .cards-servicios{
-    margin:40px 30px;
+    margin:40px 70px;
     position: absolute;
     @extend %flex;
     position: relative;
@@ -18,25 +18,27 @@
         flex-direction: row;
         margin: 7px 3px 7px 3px;
         width: 100%;
-        background-image: map-get($map: $cards, $key: bg-ig);
+        font-family: rasputin;
+        color: #aaa9a894;
         background: border-box;
         box-shadow: $box-shadow;
     }
 
     & .card-body {
-    background-image: map-get($map: $cards, $key: bg-ig);
-    background: border-box;
-    box-shadow: $box-shadow;
+        background-color: #130113d3;
+        font-family: rasputin;
+        color: #aaa9a894;
+        box-shadow: $box-shadow;
     }
 
     & .card-title{
         font-family: rasputin;
-        color: #33292194;
+        color: #aaa9a894;
         font-weight: 700;
     }
     & .card-text{
         font-family: rasputin;
-        color: #33292194;
+        color: #aaa9a894;
         font-size: 20px;
     }
 }
