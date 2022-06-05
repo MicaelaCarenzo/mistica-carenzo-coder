@@ -6,59 +6,103 @@
     src: url(../../assets/Rasputin.otf);
 }
 
+.parallax1 {
+    /* The image used */
+    background-image: url("../assets/tarot.jpeg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.cards-servicios{
-    margin:40px 70px;
-    position: absolute;
-    @extend %flex;
-    position: relative;
+.parallax2 {
+    /* The image used */
+    background-image: url("../assets/reiki.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    /* The image used */
+    background-image: url("../assets/pendulo.jpeg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    & .card {
-        position: relative;
-        flex-direction: row;
-        margin: 7px 3px 7px 3px;
-        width: 100%;
-        font-family: rasputin;
-        color: #aaa9a894;
-        background: border-box;
-        box-shadow: $box-shadow;
-    }
+.parallax4 {
+    /* The image used */
+    background-image: url("../assets/cristals.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    & .card-body {
+    .parallax-style{
+        background-color:rgba(63, 11, 63, 0.466);
         background-color: #130113d3;
         font-family: rasputin;
-        color: #aaa9a894;
+        color: #a8c4bfcc;
         box-shadow: $box-shadow;
-    }
+        align-items: center;
+        text-align: center;
+        padding: 20px;
 
     & .card-title{
         font-family: rasputin;
         color: #aaa9a894;
+        font-size: 30px;
         font-weight: 700;
     }
+
     & .card-text{
         font-family: rasputin;
-        color: #aaa9a894;
+        color: #a8c4bfcc;
         font-size: 20px;
     }
+    
 }
 
-@media only screen and (max-width: 900px) and (min-width: 200px) {    
-   .card-img-top{
-       display: none;
-   }
-   .cards-servicios {
-       margin-top: 5%;
-       margin-left: 5%;
-       margin-right: 5%;
-       position: relative;
-    
-       & .card-title{
-        font-size: larger;
-       }
-       & .card-text{
-        font-size: large;
-       }
-   }
+.parallax5 {
+    /* The image used */
+    background-image: url("../assets/call.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.parallax6 {
+    /* The image used */
+    background-image: url("../assets/universe.jpg");
+    /* Set a specific height */
+    min-height: 200px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 /* -----------------------Fin seccion Servicios */

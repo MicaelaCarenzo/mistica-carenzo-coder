@@ -13,13 +13,30 @@
 #navbarNav :hover{
     color: rgb(8, 185, 185);
 }
+@media only screen and (max-width: 990px) and (min-width:200px){ 
+
+.navbar-dark .navbar-brand{
+ display: none;
+}
+
+}
 
 
 .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     background: rgb(7,0,36);
     background: linear-gradient(189deg, rgba(7,0,36,1) 0%, rgba(76,22,80,1) 48%, rgba(42,108,76,1) 100%);
 }
 
+.body-index{
+    background-image: url(../assets/index.jpg);
+    background-repeat: cover;
+    background-attachment: scroll;
+    background-position-x: right;
+}
     
 /* ----------------------------------Nav Bar */
 
