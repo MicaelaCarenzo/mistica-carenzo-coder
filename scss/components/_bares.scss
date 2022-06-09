@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Rasputin;
+    src: url(../../assets/Rasputin.otf);
+}
+@import '../base/variables';
+@import '../base/mapas';
+
+.parall1-bar {
+    /* The image used */
+    background-image: url("../assets/coffee2.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parall2-bar {
+    /* The image used */
+    background-image: url("../assets/coffee.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parall3-bar {
+    /* The image used */
+    background-image: url("../assets/coffee3.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parall4-bar {
+    /* The image used */
+    background-image: url("../assets/borra.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .parallax-style1{
+        background-color:rgba(176, 252, 239, 0.89);
+        font-family: rasputin;
+        color: #000e0b;
+        box-shadow: $box-shadow;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    & .card-title{
+        font-family: rasputin;
+        color: #0d0129;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    & .card-text{
+        font-family: rasputin;
+        color: #000e0b;
+        font-size: 20px;
+    }
+    
+}
+
+.parall5-bar {
+    /* The image used */
+    background-image: url("../assets/coffee1.jpeg");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
