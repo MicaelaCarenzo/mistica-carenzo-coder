@@ -57,7 +57,7 @@
   opacity: 100%;
   transition: 0.2s;
 }
-@media only screen and (max: width 480px) {
+@media only screen and (max-width: 480px) {
   .subir-foto {
     display: none;
   }
