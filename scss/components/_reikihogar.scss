@@ -45,27 +45,6 @@
     }
     
 }
-
-.carousel-container1{
-    margin: 20px;
-    width: 600px;
-    height: 500px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-
-    &.carousel .item {
-        width: 100%;
-    }
-      
-     & .item img {
-          top: 0;
-          left: 0;
-      }
-    
-}
-
 .card-hogar:hover{
     background-color: #011a15ab;
     font-family: rasputin;
