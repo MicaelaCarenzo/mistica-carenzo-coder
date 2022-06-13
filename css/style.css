@@ -305,10 +305,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-width: 600px) and (min-width: 200px) {
-  .parallax1 {
-    max-width: -webkit-fill-available;
-    min-width: auto;
+@media only screen and (max-device-width: 600px) {
+  .parallax1 .parallax1 {
+    background-attachment: scroll;
   }
 }
 
@@ -323,6 +322,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-device-width: 600px) {
+  .parallax2 .parallax2 {
+    background-attachment: scroll;
+  }
+}
 
 .parallax3 {
   /* The image used */
@@ -335,6 +339,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-device-width: 600px) {
+  .parallax3 .parallax3 {
+    background-attachment: scroll;
+  }
+}
 
 .parallax4 {
   /* The image used */
@@ -346,6 +355,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-device-width: 600px) {
+  .parallax4 .parallax4 {
+    background-attachment: scroll;
+  }
 }
 
 .parallax-style {
@@ -381,6 +395,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-device-width: 600px) {
+  .parallax5 .parallax5 {
+    background-attachment: scroll;
+  }
+}
 
 .parallax6 {
   /* The image used */
@@ -392,6 +411,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-device-width: 600px) {
+  .parallax6 .parallax6 {
+    background-attachment: scroll;
+  }
 }
 
 /* -----------------------Fin seccion Servicios */
