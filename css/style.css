@@ -86,6 +86,17 @@
   padding-top: 20px;
   color: rgba(22, 1, 43, 0.6352941176);
 }
+@media only screen and (max-width: 800px) and (min-width: 200px) {
+  .main-index .main-index {
+    margin: 0px;
+  }
+  .main-index .main-index .title-index {
+    margin: 0;
+  }
+  .main-index .main-index .subtitle-index {
+    margin: 0;
+  }
+}
 
 * {
   margin: 0;
@@ -293,6 +304,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+  .parallax1 {
+    max-width: -webkit-fill-available;
+    min-width: auto;
+  }
 }
 
 .parallax2 {

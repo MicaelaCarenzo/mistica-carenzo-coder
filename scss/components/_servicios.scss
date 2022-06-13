@@ -16,8 +16,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
 
+    @media only screen and (max-width: 600px) and (min-width:200px){
+        max-width: -webkit-fill-available;
+        min-width: auto;
+    }
+}
 .parallax2 {
     /* The image used */
     background-image: url("../assets/reiki.jpg");
