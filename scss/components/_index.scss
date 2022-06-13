@@ -24,20 +24,27 @@
         color: #16012ba2;
     }
 
-    @media only screen and (max-width: 800px) and (min-width:200px){ 
-        .main-index {
-        margin: 0px;
+}
+
+
+@media screen and (min-device-width: 281px) and (max-device-width: 768px) {    
+    
+    .main-index{
+        display: flex;
+        flex-direction: column;
         
-        & .title-index{
-            margin: 0;
-        }
-        & .subtitle-index{
-            margin: 0;
-        }
+    & .title-index{
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    & .subtitle-index{
+        margin: 0;
+        font-size: 40px;
+    }
     }
 }
-}
-    
+
 *{  margin: 0;
     padding: 0;
   }

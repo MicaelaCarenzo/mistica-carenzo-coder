@@ -12,11 +12,6 @@
   color: rgb(8, 185, 185);
 }
 
-@media only screen and (max-width: 990px) and (min-width: 200px) {
-  .navbar-dark .navbar-brand {
-    display: none;
-  }
-}
 .body {
   display: flex;
   flex-direction: column;
@@ -86,18 +81,21 @@
   padding-top: 20px;
   color: rgba(22, 1, 43, 0.6352941176);
 }
-@media only screen and (max-width: 800px) and (min-width: 200px) {
-  .main-index .main-index {
-    margin: 0px;
+
+@media screen and (min-device-width: 281px) and (max-device-width: 768px) {
+  .main-index {
+    display: flex;
+    flex-direction: column;
   }
-  .main-index .main-index .title-index {
+  .main-index .title-index {
     margin: 0;
+    font-size: 60px;
   }
-  .main-index .main-index .subtitle-index {
+  .main-index .subtitle-index {
     margin: 0;
+    font-size: 40px;
   }
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -806,6 +804,27 @@
   background-size: cover;
 }
 
+@media screen and (min-device-width: 281px) and (max-device-width: 768px) {
+  .parall5-bar {
+    background-attachment: scroll;
+  }
+
+  .parall4-bar {
+    background-attachment: scroll;
+  }
+
+  .parall3-bar {
+    background-attachment: scroll;
+  }
+
+  .parall2-bar {
+    background-attachment: scroll;
+  }
+
+  .parall1-bar {
+    background-attachment: scroll;
+  }
+}
 /* Seccion HOGAR */
 @font-face {
   font-family: Rasputin;

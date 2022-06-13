@@ -87,3 +87,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (min-device-width: 281px) and (max-device-width: 768px) {
+
+    .parall5-bar {
+        background-attachment: scroll;
+      }
+      .parall4-bar {
+        background-attachment: scroll;
+      }.parall3-bar {
+        background-attachment: scroll;
+      }.parall2-bar {
+        background-attachment: scroll;
+      }.parall1-bar {
+        background-attachment: scroll;
+      }
+  }
