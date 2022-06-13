@@ -16,12 +16,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @media only screen and (max-device-width: 600px) {
-        .parallax1 {
-          background-attachment: scroll;
-        }
-      }
 }
 .parallax2 {
     /* The image used */
@@ -33,11 +27,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media only screen and (max-device-width: 600px) {
-        .parallax2 {
-          background-attachment: scroll;
-        }
-      }
+
 }
 .parallax3 {
     /* The image used */
@@ -49,11 +39,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media only screen and (max-device-width: 600px) {
-        .parallax3 {
-          background-attachment: scroll;
-        }
-      }
 }
 
 .parallax4 {
@@ -66,11 +51,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media only screen and (max-device-width: 600px) {
-        .parallax4 {
-          background-attachment: scroll;
-        }
-      }
 }
 
     .parallax-style{
@@ -108,11 +88,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media only screen and (max-device-width: 600px) {
-        .parallax5 {
-          background-attachment: scroll;
-        }
-      }
+
 }
 
 .parallax6 {
@@ -125,14 +101,26 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media only screen and (max-device-width: 600px) {
-        .parallax6 {
-          background-attachment: scroll;
-        }
-      }
+   
 }
 
-
+@media screen and (min-device-width: 281px) and (max-device-width: 768px) {
+    .parallax6 {
+      background-attachment: scroll;
+    }
+    .parallax5 {
+        background-attachment: scroll;
+      }
+      .parallax4 {
+        background-attachment: scroll;
+      }.parallax3 {
+        background-attachment: scroll;
+      }.parallax2 {
+        background-attachment: scroll;
+      }.parallax1 {
+        background-attachment: scroll;
+      }
+  }
 
 
 /* -----------------------Fin seccion Servicios */

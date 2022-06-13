@@ -305,11 +305,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-device-width: 600px) {
-  .parallax1 .parallax1 {
-    background-attachment: scroll;
-  }
-}
 
 .parallax2 {
   /* The image used */
@@ -321,11 +316,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media only screen and (max-device-width: 600px) {
-  .parallax2 .parallax2 {
-    background-attachment: scroll;
-  }
 }
 
 .parallax3 {
@@ -339,11 +329,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-device-width: 600px) {
-  .parallax3 .parallax3 {
-    background-attachment: scroll;
-  }
-}
 
 .parallax4 {
   /* The image used */
@@ -355,11 +340,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media only screen and (max-device-width: 600px) {
-  .parallax4 .parallax4 {
-    background-attachment: scroll;
-  }
 }
 
 .parallax-style {
@@ -395,11 +375,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-device-width: 600px) {
-  .parallax5 .parallax5 {
-    background-attachment: scroll;
-  }
-}
 
 .parallax6 {
   /* The image used */
@@ -412,12 +387,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-device-width: 600px) {
-  .parallax6 .parallax6 {
+
+@media screen and (min-device-width: 281px) and (max-device-width: 768px) {
+  .parallax6 {
+    background-attachment: scroll;
+  }
+
+  .parallax5 {
+    background-attachment: scroll;
+  }
+
+  .parallax4 {
+    background-attachment: scroll;
+  }
+
+  .parallax3 {
+    background-attachment: scroll;
+  }
+
+  .parallax2 {
+    background-attachment: scroll;
+  }
+
+  .parallax1 {
     background-attachment: scroll;
   }
 }
-
 /* -----------------------Fin seccion Servicios */
 /* Seccion Cursos */
 @font-face {
